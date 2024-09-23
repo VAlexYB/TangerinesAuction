@@ -25,7 +25,7 @@ function checkAuthentication() {
 }
 
 function fetchTangerines(){
-    fetch('http://localhost:8080/api/Tangerines')
+    fetch('http://localhost:5085/api/Tangerines')
         .then(response => response.json())
         .then(tangerines => renderTangerines(tangerines))
         .catch(error => console.log(error));
